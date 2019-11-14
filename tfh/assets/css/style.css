@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+ @import url('https://fonts.googleapis.com/css?family=Teko'); 
+
+*,
+*:before
+*:after{
+  margin:0;
+  padding:0;
+}
+#container{
+  margin: 5px;
+  
+}
+
+html,body{
+  height:150vh;
+  font:16px/1 "Open Sans", sans-serif;
+}
+
+.togglebox{
+  width:600px;
+  margin: 0 auto;
+  background:#E2EBE3;
+  box-shadow: 0 1px 1px;
+  transform: translateZ(0);
+}
+
+input[type="radio"]{
+  position:absolute;
+  opacity:0;
+}
+
+label{
+  position: relative;
+  display: block;
+  height:50px;
+  line-height: 50px;
+  padding:0 20px;
+  font-size: 14px;
+  font-weight: 700;
+  border-top:1px solid #615AA2;
+  background:#8e80c4;
+  cursor: pointer;
+}
+
+label[for*="1"]{
+  border:0;
+}
+
+label:after{
+  content:"\f078";
+  position: absolute;
+  top:px;
+  right: 20px; 
+  font-family: fontawesome;
+  transform: rotate(90deg);
+  transition:0.3s transform;
+}
+
+section{
+  height: 0;
+  transition: 0.3s all;
+  overflow:hidden;
+}
+
+#toggle1:checked ~ label[for*="1"]:after,
+#toggle2:checked ~ label[for*="2"]:after,
+#toggle3:checked ~ label[for*="3"]:after,
+#toggle4:checked ~ label[for*="4"]:after,
+#toggle5:checked ~ label[for*="5"]:after,
+#toggle6:checked ~ label[for*="6"]:after{
+  transform: rotate(0deg);
+}
+
+#toggle1:checked ~ #content1,
+#toggle2:checked ~ #content2,
+#toggle3:checked ~ #content3,
+#toggle4:checked ~ #content4, 
+#toggle5:checked ~ #content5,
+#toggle6:checked ~ #content6{
+  height: 400px;
+}
+
+#bio{
+  margin:15px 0;
+  padding: 0 20px;
+  font-size: 12px;
+  line-height:1;
+}
+
+p{
+font-family: "Lucida Console", Monaco, monospace;
+font-size: 15px;
+letter-spacing: 0px;
+word-spacing: 0px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+margin:40px;
+padding:10px;
+}
+
+h1{
+  font-family: "Lucida Console", Monaco, monospace;
+font-size: 25px;
+letter-spacing: 0px;
+word-spacing: 0px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+text-align: center;
+}
+
+header nav {
+  max-width: 80vw;
+  margin: 100px auto;
+}
+
+header nav ul{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  padding:20px;
+}
+
+header nav ul li{
+  list-style-type:none;
+  padding:10px;
+}
+
+header nav ul li a, header nav ul li a:visited{
+  color:#000;
+  text-decoration:none;
+  background-color:#E2EBE3;
+ 
+  padding: 25px 15px;
+  border-radius:100px;
+  transition: .3s;
+}
+
+header nav ul li a:hover, header nav ul li a:active{
+  background-color:#C8A9E3;
+}
+
+body{
+background-image: url("https://vignette.wikia.nocookie.net/stampede/images/5/50/Wiki-background/revision/latest?cb=20180314133619");
+}
+
+#about{
+  color:white;
+  text-align:center;
+  margin-top: 90px;
+  font-size: 35px;
+  font-family: "Lucida Console", Monaco, monospace;
+  
+}
+
+#contact{
+  color:white;
+  text-align:center;
+  margin-top: 90px;
+  font-size: 35px;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+#aboutp{
+  color:white;
+  font-size: 20px;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+#champs{
+  color:white;
+  text-align: center;
+  margin:30px;
+  font-size: 35px;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+#arizona{
+  height:300px;
+  margin-left: 130px
+}
+
+#velvet{
+  height: 270px;
+  margin-left: 190px;
+}
+
+#oleander{
+  height:275px;
+  margin-left: 150px;
+}
+
+#paprika{
+  height: 300px;
+  margin-left: 170px;
+}
+
+#pom{
+  height: 275px;
+  margin-left:160px;
+}
+
+#tian{
+  height: 310px;
+  margin-left:160px;
+}
+
+#sprite{
+  height:50px;
+  margin-left: 240px;
+}
+
+#trailer{
+ margin: 5vw;
+ margin-left: 40vw;
+}
+
+#logo{
+  height:400px;
+  width: 650px;
+  margin-left:10px;
+  margin-top: 20px;
+}
+
+footer{
+  text-align:center;
+  color:white;
+}
