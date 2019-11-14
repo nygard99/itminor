@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html data-cloud9-id='1' xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head data-cloud9-id='2'>
+    <meta data-cloud9-id='5' charset="UTF-8">
+    <meta data-cloud9-id='6' name="description" content="JavaScript Calculator">
+    <meta data-cloud9-id='7' name="keywords" content="JavaScript, HTML, CSS">
+    <meta data-cloud9-id='8' name="author" content="Bruce Bauer">
+    <title data-cloud9-id='9'>JavaScript Calculator</title>
+    <link data-cloud9-id='10' rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body data-cloud9-id='3'>
+<form data-cloud9-id='11' id="myform">
+    <div data-cloud9-id='12' class="formcontainer" onsubmit="return false">
+        <h1 data-cloud9-id='13'>JavaScript Calculator</h1>
+        <fieldset data-cloud9-id='14' id="detail">
+            <legend data-cloud9-id='15'>Calculator</legend>  
+            <br data-cloud9-id='16'>
+            
+            <label data-cloud9-id='17' class="formlabel" for="Operand1">Operand 1: </label>
+            <input data-cloud9-id='18' type="text" id="Operand1" name="Operand1" size="15" maxlength="15"       
+                   data-rule-required="true"  data-msg-required="Operand 1 is Required" 
+                   data-rule-number="true" data-msg-number="Operand 1 must be a Number">
+            <label data-cloud9-id='19' class="error" for="Operand1" id="Operand1Error"></label>
+            <br data-cloud9-id='20'><br data-cloud9-id='21'>
+            
+            <label data-cloud9-id='22' class="formlabel">Operator: </label>
+                <label data-cloud9-id='23' for="AddOperator">
+                    <input data-cloud9-id='24' type="radio" name="Operator" id="AddOperator" value="Add"
+                           data-rule-required="true" data-msg-required="Operator is Required" />+
+                </label>
+                <label data-cloud9-id='25' for="SubOperator">
+                    <input data-cloud9-id='26' type="radio" name="Operator" id="SubOperator" value="Sub">-
+                </label>
+                <label data-cloud9-id='27' for="MulOperator">
+                    <input data-cloud9-id='28' type="radio" name="Operator" id="MulOperator" value="Mul">*
+                </label>
+                 <label data-cloud9-id='29' for="DivOperator">
+                    <input data-cloud9-id='30' type="radio" name="Operator" id="DivOperator" value="Div">/
+                </label>
+            <label data-cloud9-id='31' for="Operator" class="error" id="OperatorError"></label>
+            <br data-cloud9-id='32'><br data-cloud9-id='33'>
+      
+            <label data-cloud9-id='34' class="formlabel" for="Operand2">Operand 2: </label>
+            <input data-cloud9-id='35' type="text" id="Operand2" name="Operand2" size="15" maxlength="15"       
+                   data-rule-required="true"  data-msg-required="Operand 2 is Required" 
+                   data-rule-number="true" data-msg-number="Operand 2 must be a Number">
+            <label data-cloud9-id='36' class="error" for="Operand2" id="Operand2Error"></label>
+            <br data-cloud9-id='37'><br data-cloud9-id='38'>
+
+            <label data-cloud9-id='39' class="formlabel">Result: </label>
+            <span data-cloud9-id='40' id="Result"></span>
+            <br data-cloud9-id='41'><br data-cloud9-id='42'>
+
+            <input data-cloud9-id='43' type="button" value="Calculate" name="Calculate" onclick="calculate();">
+            <input data-cloud9-id='44' type="button" value="Clear" name="Clear" onclick="clearform();" novalidate>
+
+        </fieldset>
+    </div>
+</form>
+<script data-cloud9-id='45' src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script data-cloud9-id='46' src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script data-cloud9-id='47' src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script data-cloud9-id='48' src="assets/js/script.js"></script>
+</body>
+</html><script src="/_static/preview/livecss.js"></script>
